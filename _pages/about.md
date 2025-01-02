@@ -8,21 +8,23 @@ redirect_from:
   - /about.html
 ---
 
-# About
+About
+======
 
 <div style="text-align: justify;">
-I am a Ph.D. candidate in the Department of Computer Science and Engineering at the University of Notre Dame, where I work under the guidance of Prof. Adam Czajka in the Computer Vision Research Laboratory (CVRL). My research is focused on advancing machine learning and computer vision techniques to address complex challenges in human biometrics, particularly in the areas of forensic iris recognition and newborn iris recognition, with applications in identity verification and security. I hold an M.S. in Computer Science and Engineering from the University of Notre Dame and a B.Sc. in Computer Science and Engineering from the University of Asia Pacific.
+I am a Ph.D. candidate in the Department of Computer Science and Engineering at the University of Notre Dame, where I work under the guidance of Prof. Adam Czajka in the Computer Vision Research Laboratory (CVRL). My research is focused on advancing machine learning and computer vision techniques to address complex challenges in human biometrics, particularly in the areas of forensic iris recognition and newborn iris recognition, with applications in identity verification and security. I hold an M.S. in Computer Science and Engineering from the University of Notre Dame and a B.Sc. in Computer Science and Engineering from the University of Asia Pacific. </div>
 
 I am currently seeking 2025 summer internship opportunities. 😊
-</div>
 
-# Education
+Education
+------
 
 - **Ph.D. in Computer Engineering**, University of Notre Dame (Expected 2026)
 - **M.S. in Computer Science and Engineering**, University of Notre Dame (2024)
 - **B.Sc. in Computer Science and Engineering (Highest Distinction)**, University of Asia Pacific, Dhaka, Bangladesh (2018)
 
-# News
+News
+------
 
 * 08/2024: 🎓🎓 Successfully defended my Ph.D. Candidacy Exam
 * 06/2024: 📚📚 1 paper accepted to MICCAI 2024
