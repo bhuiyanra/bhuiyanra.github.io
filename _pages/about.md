@@ -16,7 +16,7 @@ I am a Ph.D. candidate in the Department of Computer Science and Engineering at 
 
 <br>
 
-I am currently seeking 2025 summer internship opportunities. 😊
+**I am currently seeking 2025 summer internship opportunities.** 😊
 
 Education
 ------
