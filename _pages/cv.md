@@ -11,7 +11,7 @@ redirect_from:
 
 Find the PDF version <a href="https://bhuiyanra.github.io/files/Resume.pdf" target="_blank" rel="noopener noreferrer">here</a>. Last Updated: 01/02/2025.
 
-<embed src="https://bhuiyanra.github.io/files/Resume.pdf" width="800" height="900" type="application/pdf">
+<embed src="https://bhuiyanra.github.io/files/Resume.pdf" width="800" height="700" type="application/pdf">
 
 
 
