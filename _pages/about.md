@@ -14,7 +14,6 @@ About
 <div style="text-align: justify;">
 I am a Ph.D. candidate in the Department of Computer Science and Engineering at the University of Notre Dame, where I work under the guidance of Prof. Adam Czajka in the Computer Vision Research Laboratory (CVRL). My research is focused on advancing machine learning and computer vision techniques to address complex challenges in human biometrics, particularly in the areas of forensic iris recognition and newborn iris recognition, with applications in identity verification and security. I hold an M.S. in Computer Science and Engineering from the University of Notre Dame and a B.Sc. in Computer Science and Engineering from the University of Asia Pacific. </div>
 
-<br><br>
 
 I am currently seeking 2025 summer internship opportunities. 😊
 
