@@ -9,7 +9,7 @@ To explore my full list of publications, please visit my <a href="https://schola
 
 ---
 
-## Conference/Journal Papers
+## Journal/Conference Papers
 
 * <a href="" target="_blank" rel="noopener noreferrer">**Iris Recognition for Infants** </a><br>
 <u>Rasel Ahmed Bhuiyan</u>, Mateusz Trokielewicz, Piotr Maciejewicz, Sherri Bucher, Adam Czajka  <br>
