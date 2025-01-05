@@ -11,7 +11,7 @@ To explore my full list of publications, please visit my <a href="https://schola
 
 ## Journal/Conference Papers
 
-* <a href="" target="_blank" rel="noopener noreferrer">**Iris Recognition for Infants** </a><br>
+* <a href="https://arxiv.org/pdf/2501.01375" target="_blank" rel="noopener noreferrer">**Iris Recognition for Infants** </a><br>
 <u>Rasel Ahmed Bhuiyan</u>, Mateusz Trokielewicz, Piotr Maciejewicz, Sherri Bucher, Adam Czajka  <br>
 📚 Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2025
 
