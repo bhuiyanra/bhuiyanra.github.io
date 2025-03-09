@@ -28,7 +28,7 @@ Education
 
 News
 ------
-
+- **2/2025**: 🎉🎉 **Best Paper Award**, CV4Smalls Workshop, **WACV 2025**.
 - **11/2024**: 📚📚 Two papers accepted to **WACV 2025**.
 - **03/2024**: 📚📚 One paper accepted to the **Journal of Forensic Identification**.
 - **12/2023**: 📚📚 One paper accepted to **WACV 2024**.
