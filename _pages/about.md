@@ -23,7 +23,7 @@ Education
 ------
 
 - **Ph.D. in Computer Science and Engineering**, University of Notre Dame (Expected 2026)
-- **M.S. in Computer Science and Engineering**, University of Notre Dame (2024)
+- **M.S. in Computer Science and Engineering**, University of Notre Dame (2025)
 - **B.Sc. in Computer Science and Engineering**, University of Asia Pacific (2018)
 
 News
