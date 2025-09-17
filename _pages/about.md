@@ -16,7 +16,7 @@ I am a Ph.D. candidate in the Department of Computer Science and Engineering at 
 </div>
 
 <div style="margin-top: 10px; text-align: justify; font-weight: bold;">
-I am currently seeking 2025 summer internship opportunities. 😊
+I am currently seeking 2026 summer internship opportunities. 😊
 </div>
 
 Education
@@ -28,9 +28,12 @@ Education
 
 News
 ------
+- **06/2025**: 🎉🎉 Successfully passed my **Ph.D. Oral Candidacy Exam**.
+- **06/2025**: 📚📚 Journal paper accepted to **IEEE-TBIOM**.
+- **05/2025**: 📚📚 One paper accepted to **VSS 2025**.
 - **02/2025**: 🎉🎉 **Best Paper Award**, CV4Smalls Workshop, **WACV 2025**.
 - **11/2024**: 📚📚 Two papers accepted to **WACV 2025**.
-- **03/2024**: 📚📚 One paper accepted to the **Journal of Forensic Identification**.
+- **03/2024**: 📚📚 Journal paper accepted to the **Journal of Forensic Identification**.
 - **12/2023**: 📚📚 One paper accepted to **WACV 2024**.
 - **11/2023**: 🎉🎉 Successfully passed my **Ph.D. Qualifiers Exam**.
 - **01/2022**: 🧑🏻‍🏫🧑🏻‍🏫 Began my **Ph.D. journey at the University of Notre Dame**.
