@@ -10,6 +10,10 @@ To explore my full list of publications, please visit my <a href="https://schola
 ---
 
 ## Journal/Conference Papers
+* <a href="10.1109/TBIOM.2025.3585093" target="_blank" rel="noopener noreferrer">**Beyond Mortality: Advancements in Post-Mortem Iris Recognition Through Data Collection and Computer-Aided Forensic Examination** </a><br>
+<u>Rasel Ahmed Bhuiyan</u>, Parisa Farmanifard, Renu Sharma, Andrey Kuehlkamp, Aidan Boyd, Patrick J Flynn, Kevin W Bowyer, Arun Ross, Dennis Chute, Adam Czajka <br>
+📚 IEEE Transactions on Biometrics, Behavior, and Identity Science, 2025
+
 * <a href="https://jov.arvojournals.org/article.aspx?articleid=2809333" target="_blank" rel="noopener noreferrer">**Visualizing the Unseen: Perceptographer, an AI Engine for Visualizing Brain-Stimulation-Induced Perceptual Events** </a><br>
 Elia Shahbazi, Drew Nguyen, <u>Rasel Ahmed Bhuiyan</u>, Adam Czajka, Arash Afraz  <br>
 📚 Journal of Vision, 2025
