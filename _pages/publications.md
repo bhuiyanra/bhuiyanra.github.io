@@ -10,6 +10,9 @@ To explore my full list of publications, please visit my <a href="https://schola
 ---
 
 ## Journal/Conference Papers
+* <a href="https://jov.arvojournals.org/article.aspx?articleid=2809333" target="_blank" rel="noopener noreferrer">**Visualizing the Unseen: Perceptographer, an AI Engine for Visualizing Brain-Stimulation-Induced Perceptual Events** </a><br>
+Elia Shahbazi, Drew Nguyen, <u>Rasel Ahmed Bhuiyan</u>, Adam Czajka, Arash Afraz  <br>
+📚 Journal of Vision, 2025
 
 * <a href="https://arxiv.org/pdf/2501.01375" target="_blank" rel="noopener noreferrer">**Iris Recognition for Infants** </a><br>
 <u>Rasel Ahmed Bhuiyan</u>, Mateusz Trokielewicz, Piotr Maciejewicz, Sherri Bucher, Adam Czajka  <br>
