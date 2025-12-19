@@ -16,7 +16,7 @@ I am a Ph.D. candidate in the Department of Computer Science and Engineering at 
 </div>
 
 <div style="margin-top: 10px; text-align: justify; font-weight: bold;">
-I am currently seeking 2026 summer internship opportunities. 😊
+I am actively seeking Research Scientist and Applied Research roles in Machine Learning and Computer Vision, and I am also open to Summer 2026 research internship opportunities.
 </div>
 
 Education
