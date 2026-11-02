@@ -1,0 +1,44 @@
+# ==============================================================
+#  NEWS: newest item at the top.
+#  "date" is free text, e.g. "Nov 2026" or "Feb 28, 2025".
+#  "text" can use **bold**, *italic*, and [links](https://...).
+# ==============================================================
+
+- date: Nov 2026
+  text: I'm on the job market for roles starting in 2027. Feel free to [reach out](mailto:rbhuiyan@nd.edu)!
+
+- date: 2026
+  text: Serving as a reviewer for IEEE/CVF WACV 2027.
+
+- date: Fall 2025
+  text: Represented the Computer Vision Research Lab at Notre Dame's CSE Lab Day, with live demos for first-year students.
+
+- date: Aug 2025
+  text: Received my M.Sc. in Computer Science and Engineering from the University of Notre Dame.
+
+- date: Jun 2025
+  text: Passed my Ph.D. oral candidacy exam.
+
+- date: Jun 2025
+  text: Journal paper *Beyond Mortality* accepted to [IEEE T-BIOM](https://ieeexplore.ieee.org/abstract/document/11063436).
+
+- date: May 2025
+  text: One paper accepted to [VSS 2025](https://jov.arvojournals.org/article.aspx?articleid=2809333).
+
+- date: Feb 2025
+  text: "**Best Paper Award** at the CV4Smalls Workshop, WACV 2025, for *Iris Recognition for Infants*."
+
+- date: Nov 2024
+  text: Two papers accepted to WACV 2025.
+
+- date: Mar 2024
+  text: Journal paper accepted to the *Journal of Forensic Identification*.
+
+- date: Dec 2023
+  text: One paper accepted to WACV 2024.
+
+- date: Nov 2023
+  text: Passed my Ph.D. qualifying exam.
+
+- date: Jan 2022
+  text: Began my Ph.D. at the University of Notre Dame.

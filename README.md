@@ -1,119 +1,85 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Personal website: bhuiyanra.github.io
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+All the text on the website comes from a few simple files in the `_data` folder.
+To change the website, edit one of these files on GitHub and save. The site
+updates by itself in about 1–2 minutes.
 
-# Getting Started
+## Which file changes what
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| What you want to change | File to edit |
+|---|---|
+| Name, short intro, links, job market box, About text, the small fact boxes | `_data/profile.yml` |
+| News | `_data/news.yml` |
+| Research project cards | `_data/research.yml` |
+| Publications | `_data/publications.yml` |
+| Experience and education | `_data/experience.yml` |
+| Teaching | `_data/teaching.yml` |
+| Honors, talks, service | `_data/honors.yml` |
+| Photo | replace `assets/img/profile.jpg` |
+| Resume and CV PDFs | replace the files in `files/` |
+| Colors and fonts | top of `assets/css/style.css` |
 
-See more info at https://academicpages.github.io/
+You never need to edit `index.html`.
 
-## Running locally
+## How to edit a file on GitHub
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+1. Open the repository on github.com and click the file (for example `_data/news.yml`).
+2. Click the pencil icon (Edit).
+3. Make your change, then click **Commit changes**.
+4. Wait 1–2 minutes and refresh your website.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## Examples
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+**Add a news item** (put it at the top of `_data/news.yml`):
 
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
-```bash
-docker build -t jekyll-site .
+```yaml
+- date: Dec 2026
+  text: Our paper was accepted to **WACV 2027**!
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+**Add a publication** (put it at the top of `_data/publications.yml`):
+
+```yaml
+- title: "Your Paper Title"
+  authors: Rasel Ahmed Bhuiyan, Adam Czajka
+  venue: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+  venue_short: WACV 2027
+  year: 2027
+  type: conference        # journal, conference, workshop, or review
+  first_author: true
+  links:
+    - label: Paper
+      url: https://...
+    - label: Code
+      url: https://github.com/...
 ```
 
-To run the `docker run` command on Windows, you need to adjust the syntax for the volume mapping (`-v`) as Windows uses different path formats. Here's how to run your command on Windows:
+You can also add `award:`, `abstract:`, or `bibtex:` to any publication.
+For a multi-line BibTeX entry, write `bibtex: |` and indent the lines under it.
 
-### Steps for Windows:
-1. **Check Docker Installation**: Ensure Docker is installed and running.
-2. **Adjust Path for Volume Mapping**:
+**Update your resume or CV:** upload the new PDF to the `files` folder with the
+same file name (`Rasel_Ahmed_Bhuiyan_Resume.pdf` or `Rasel_Ahmed_Bhuiyan_CV.pdf`).
+GitHub will ask to replace the old file. The buttons on the site keep working.
 
-   - On Windows, replace `$(pwd)` with the full absolute path to your current directory. For example:
+**Change your photo:** upload a square photo named `profile.jpg` into
+`assets/img/`. It replaces the placeholder.
 
-     ```bash
-     -v C:\path\to\your\site:/usr/src/app
-     ```
+## Rules that prevent errors
 
-### Full Command Example:
-```bash
-docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-```
+- Keep the spaces at the start of each line exactly as they are. Use spaces, not tabs.
+- If a line contains a colon followed by a space (`: `), or starts with `*`, put the
+  whole text in double quotes: `text: "Title: A Study"`.
+- Each list item starts with `- ` (dash and space).
+- If the site stops updating, open the **Actions** tab on GitHub. A red X means
+  there is a typo in the file you just edited. The error message names the file
+  and line.
 
-### Things to Keep in Mind:
-1. **Use PowerShell**:
-   - If you are using PowerShell, you can use `${PWD}` for the current directory:
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
+## First-time setup
 
-2. **Enable Docker File Sharing**:
-   - If your volume doesn't map correctly, ensure Docker has access to the drive where your project resides. To do this:
-     - Open Docker Desktop.
-     - Go to *Settings* → *Resources* → *File Sharing*.
-     - Add your drive (e.g., `C:`).
-
-3. **Run in Command Prompt or PowerShell**:
-   - In *Command Prompt*:
-   
-     ```bash
-     docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-     ```
-   - In *PowerShell*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+1. Download your current repository as a backup (Code → Download ZIP).
+2. In the repository `bhuiyanra.github.io`, delete the old files.
+3. Click **Add file → Upload files**, and drag in everything from this folder
+   (including the `_data` and `assets` folders). Commit.
+4. Go to **Settings → Pages**. Under "Build and deployment", choose
+   **Deploy from a branch**, branch **main**, folder **/ (root)**. Save.
+5. After 1–2 minutes, open https://bhuiyanra.github.io

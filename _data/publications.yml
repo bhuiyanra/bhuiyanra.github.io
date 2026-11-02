@@ -1,0 +1,199 @@
+# ==============================================================
+#  PUBLICATIONS: newest at the top. The page groups them by year.
+#
+#  type:   journal | conference | workshop | review
+#          ("review" = under review or submitted)
+#  venue_short:  small label shown on the left, e.g. "WACV 2025"
+#  first_author: true or false
+#  award:  optional, e.g. "Best Paper Award"
+#  links:  optional list of buttons (Paper, Code, Slides, Poster...)
+#  abstract / bibtex: optional. If you add them, a button appears.
+#
+#  Your name is made bold automatically. Write it exactly as:
+#  Rasel Ahmed Bhuiyan
+# ==============================================================
+
+# ---------------- 2026 ----------------
+- title: "ColdIrisNet: Biology-Guided Fusion for Forensic Iris Recognition"
+  authors: Rasel Ahmed Bhuiyan, Adam Czajka
+  venue: Information Fusion (Elsevier), under review
+  venue_short: Inf. Fusion
+  year: 2026
+  type: review
+  first_author: true
+  links: []
+
+- title: "Perceptographer: AI-Powered Framework for Controlled Navigation of High-Dimensional Stimulus Spaces"
+  authors: Elia Shahbazi, Drew Nguyen, Rasel Ahmed Bhuiyan, Adam Czajka, Arash Afraz
+  venue: Journal of Vision, submitted
+  venue_short: JOV
+  year: 2026
+  type: review
+  first_author: false
+  links: []
+
+# ---------------- 2025 ----------------
+- title: "Iris Recognition for Infants"
+  authors: Rasel Ahmed Bhuiyan, Mateusz Trokielewicz, Piotr Maciejewicz, Sherri Bucher, Adam Czajka
+  venue: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops, pp. 83–92
+  venue_short: WACVW 2025
+  year: 2025
+  type: workshop
+  first_author: true
+  award: Best Paper Award
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2025W/CV4Small/html/Bhuiyan_Iris_Recognition_for_Infants_WACVW_2025_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/Infant-Iris-Recognition
+
+- title: "Forensic Iris Image-Based Post-Mortem Interval Estimation"
+  authors: Rasel Ahmed Bhuiyan, Adam Czajka
+  venue: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), Tucson, Arizona
+  venue_short: WACV 2025
+  year: 2025
+  type: conference
+  first_author: true
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2025/html/Bhuiyan_Forensic_Iris_Image-Based_Post-Mortem_Interval_Estimation_WACV_2025_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/PMI-Estimation
+
+- title: "Beyond Mortality: Advancements in Post-Mortem Iris Recognition through Data Collection and Computer-Aided Forensic Examination"
+  authors: Rasel Ahmed Bhuiyan, Parisa Farmanifard, Renu Sharma, Andrey Kuehlkamp, Aidan Boyd, Patrick J. Flynn, Kevin W. Bowyer, Arun Ross, Dennis Chute, Adam Czajka
+  venue: IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM)
+  venue_short: T-BIOM 2025
+  year: 2025
+  type: journal
+  first_author: true
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/11063436
+
+- title: "Visualizing the Unseen: Perceptographer, an AI Engine for Visualizing Brain-Stimulation-Induced Perceptual Events"
+  authors: Elia Shahbazi, Drew Nguyen, Rasel Ahmed Bhuiyan, Adam Czajka, Arash Afraz
+  venue: Journal of Vision, Vol. 25, 2855 (abstract)
+  venue_short: JOV 2025
+  year: 2025
+  type: journal
+  first_author: false
+  links:
+    - label: Abstract
+      url: https://jov.arvojournals.org/article.aspx?articleid=2809333
+
+# ---------------- 2024 ----------------
+- title: "Forensic Iris Image Synthesis"
+  authors: Rasel Ahmed Bhuiyan, Adam Czajka
+  venue: IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops, pp. 1015–1023
+  venue_short: WACVW 2024
+  year: 2024
+  type: workshop
+  first_author: true
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2024W/MAP-A/html/Bhuiyan_Forensic_Iris_Image_Synthesis_WACVW_2024_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/ForensicIrisSynthesis
+
+- title: "Forensic Iris Recognition: A Survey"
+  authors: Rasel Ahmed Bhuiyan, Adam Czajka
+  venue: Journal of Forensic Identification, vol. 74, no. 1, p. 38
+  venue_short: JFI 2024
+  year: 2024
+  type: journal
+  first_author: true
+  links:
+    - label: Paper
+      url: "https://openurl.ebsco.com/EPDB%3Agcd%3A2%3A30351922/detailv2?sid=ebsco%3Aplink%3Ascholar&id=ebsco%3Agcd%3A176791824&crl=c&link_origin=scholar.google.com"
+
+# ---------------- 2021 ----------------
+- title: "Enhanced Bag-of-Words Representation for Human Activity Recognition Using Mobile Sensor Data"
+  authors: Rasel Ahmed Bhuiyan, Shams Tarek, Hongda Tian
+  venue: Signal, Image and Video Processing (Springer Nature), pp. 1–8
+  venue_short: SIViP 2021
+  year: 2021
+  type: journal
+  first_author: true
+  links:
+    - label: Paper
+      url: https://link.springer.com/article/10.1007/s11760-021-01907-4
+
+- title: "A Bag-of-Words Based Feature Extraction Scheme for American Sign Language Number Recognition from Hand Gesture Images"
+  authors: Rasel Ahmed Bhuiyan, A. K. Kundu, S. R. Shafi, A. Matin
+  venue: International Journal of Machine Learning and Computing, vol. 11, no. 1, pp. 85–91
+  venue_short: IJMLC 2021
+  year: 2021
+  type: journal
+  first_author: true
+  links: []
+
+# ---------------- 2020 ----------------
+- title: "A Robust Feature Extraction Model for Human Activity Characterization Using 3-Axis Accelerometer and Gyroscope Data"
+  authors: Rasel Ahmed Bhuiyan, N. Ahmed, Md. Amiruzzaman, M. R. Islam
+  venue: Sensors (MDPI), 20(23):6990
+  venue_short: Sensors 2020
+  year: 2020
+  type: journal
+  first_author: true
+  links:
+    - label: Paper
+      url: https://www.mdpi.com/1424-8220/20/23/6990
+
+- title: "Efficient Frequency Domain Feature Extraction Model Using EPS and LDA for Human Activity Recognition"
+  authors: Rasel Ahmed Bhuiyan, Md. Amiruzzaman, Nadeem Ahmed, Md. Rashedul Islam
+  venue: 3rd IEEE International Conference on Knowledge Innovation and Invention (ICKII), Kaohsiung, Taiwan, pp. 344–347
+  venue_short: ICKII 2020
+  year: 2020
+  type: conference
+  first_author: true
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/9318786
+
+# ---------------- 2019 ----------------
+- title: "A Hybrid Scheme Using PCA and ICA Based Statistical Feature for Epileptic Seizure Recognition from EEG Signal"
+  authors: A. Matin, Rasel Ahmed Bhuiyan, S. R. Shafi, A. K. Kundu, M. U. Islam
+  venue: Joint 8th International Conference on Informatics, Electronics & Vision (ICIEV) and 3rd International Conference on Imaging, Vision & Pattern Recognition (IVPR)
+  venue_short: ICIEV 2019
+  year: 2019
+  type: conference
+  first_author: false
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/8858573
+
+# ---------------- 2018 ----------------
+- title: "PCA and ICA Based Hybrid Dimension Reduction Model for Cardiac Arrhythmia Disease Diagnosis"
+  authors: Md. Rashedul Islam, Rasel Ahmed Bhuiyan, Nadeem Ahmed, Md. Rajibul Islam
+  venue: IEEE 10th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment and Management (HNICEM), Baguio City, Philippines, pp. 1–7
+  venue_short: HNICEM 2018
+  year: 2018
+  type: conference
+  first_author: false
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/8666331
+
+- title: "Hand Gesture Feature Extraction Using Deep Convolutional Neural Network for Recognizing American Sign Language"
+  authors: Md. Rashedul Islam, Ummey Kulsum Mitu, Rasel Ahmed Bhuiyan, Jungpil Shin
+  venue: 4th International Conference on Frontiers of Signal Processing (ICFSP), Poitiers, France, pp. 115–119
+  venue_short: ICFSP 2018
+  year: 2018
+  type: conference
+  first_author: false
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/8552044
+
+# ---------------- 2017 ----------------
+- title: "Reduction of Gesture Feature Dimension for Improving the Hand Gesture Recognition Performance of Numerical Sign Language"
+  authors: Rasel Ahmed Bhuiyan, Abdul Kawsar Tushar, Akm Ashiquzzaman, Jungpil Shin, Md. Rashedul Islam
+  venue: 20th International Conference of Computer and Information Technology (ICCIT), Dhaka, Bangladesh, pp. 1–6
+  venue_short: ICCIT 2017
+  year: 2017
+  type: conference
+  first_author: true
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/8281833

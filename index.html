@@ -1,0 +1,277 @@
+---
+# This page is built from the files in the _data folder.
+# You do not need to edit this file to change your content.
+---
+{%- assign p = site.data.profile -%}
+{%- capture me_bold -%}<strong class="me">{{ p.name }}</strong>{%- endcapture -%}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ p.name }} | {{ p.tagline }}</title>
+  <meta name="description" content="{{ p.meta_description | strip }}">
+  <meta name="author" content="{{ p.name }}">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="{{ p.name }}">
+  <meta property="og:description" content="{{ p.meta_description | strip }}">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:image" content="{{ site.url }}/{{ p.photo }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="{{ site.url }}/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#top">{{ p.name }}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      {%- for d in p.documents -%}{%- if d.in_nav %}
+      <a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.label }}</a>
+      {%- endif -%}{%- endfor %}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ============ INTRO ============ -->
+  <section id="top" class="hero wrap">
+    <figure class="portrait">
+      <span class="ring ring-outer" aria-hidden="true"></span>
+      <span class="ring ring-inner" aria-hidden="true"></span>
+      <img src="{{ p.photo }}" alt="Portrait of {{ p.name }}" width="440" height="440">
+    </figure>
+    <div class="hero-text">
+      <h1>{{ p.name }}</h1>
+      <p class="tagline">{{ p.tagline }}</p>
+      <p class="role">{{ p.title }}, {{ p.affiliation }}</p>
+      <ul class="links">
+        <li><a href="mailto:{{ p.email }}">{{ p.email }}</a></li>
+        {%- for l in p.links %}
+        <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>
+        {%- endfor %}
+      </ul>
+      {%- if p.job_market.show %}
+      <div class="market">
+        <div class="market-text">{{ p.job_market.text | markdownify }}</div>
+        <div class="btns">
+          <a class="btn btn-primary" href="mailto:{{ p.email }}">Email me</a>
+          {%- for d in p.documents %}
+          <a class="btn" href="{{ d.url }}" target="_blank" rel="noopener">{{ d.label }} (PDF)</a>
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endif %}
+    </div>
+  </section>
+
+  <!-- ============ ABOUT + NEWS ============ -->
+  <div class="wrap intro-grid">
+    <section id="about" class="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="prose">{{ p.bio | markdownify }}</div>
+      {%- if p.highlights.first %}
+      <dl class="facts">
+        {%- for h in p.highlights %}
+        <div class="fact"><dt>{{ h.value }}</dt><dd>{{ h.label }}</dd></div>
+        {%- endfor %}
+      </dl>
+      {%- endif %}
+    </section>
+
+    <aside class="news" aria-labelledby="news-h">
+      <h2 id="news-h">News</h2>
+      <ol class="news-list">
+        {%- for n in site.data.news %}
+        <li>
+          <span class="news-date">{{ n.date }}</span>
+          <div class="news-text">{{ n.text | markdownify }}</div>
+        </li>
+        {%- endfor %}
+      </ol>
+    </aside>
+  </div>
+
+  <!-- ============ RESEARCH ============ -->
+  <section id="research" class="wrap block" aria-labelledby="research-h">
+    <h2 id="research-h">Research</h2>
+    <div class="projects">
+      {%- for r in site.data.research %}
+      <article class="project">
+        {%- if r.image %}
+        <img class="project-img" src="{{ r.image }}" alt="" loading="lazy">
+        {%- endif %}
+        <h3>{{ r.title }}</h3>
+        <p class="project-focus">{{ r.focus }}{% if r.tag %} <span class="tag">{{ r.tag }}</span>{% endif %}</p>
+        {%- if r.points.first %}
+        <ul class="points">
+          {%- for pt in r.points %}
+          <li>{{ pt }}</li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        {%- if r.award %}
+        <p class="award">{{ r.award }}</p>
+        {%- endif %}
+        {%- if r.links.first %}
+        <p class="mini-links">
+          {%- for l in r.links %}
+          <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+          {%- endfor %}
+        </p>
+        {%- endif %}
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="wrap block" aria-labelledby="pubs-h">
+    <div class="block-head">
+      <h2 id="pubs-h">Publications</h2>
+      <p class="block-note">Full list on <a href="{{ p.links[0].url }}" target="_blank" rel="noopener">{{ p.links[0].label }}</a></p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter publications">
+      <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="journal" aria-pressed="false">Journal</button>
+      <button type="button" class="chip" data-filter="conference" aria-pressed="false">Conference</button>
+      <button type="button" class="chip" data-filter="workshop" aria-pressed="false">Workshop</button>
+      <button type="button" class="chip" data-filter="review" aria-pressed="false">Under review</button>
+      <label class="first-toggle"><input type="checkbox" id="first-only"> First author only</label>
+    </div>
+
+    <div class="pubs">
+      {%- assign last_year = "" -%}
+      {%- for pub in site.data.publications -%}
+      {%- assign y = pub.year | append: "" -%}
+      {%- if y != last_year %}
+      {%- unless forloop.first %}</ol></div>{% endunless %}
+      <div class="year-group">
+        <h3 class="year">{{ y }}</h3>
+        <ol class="pub-list">
+      {%- assign last_year = y -%}
+      {%- endif %}
+          <li class="pub" data-type="{{ pub.type }}" data-first="{{ pub.first_author }}">
+            <span class="venue">{{ pub.venue_short }}</span>
+            <div class="pub-body">
+              <p class="pub-title">{{ pub.title }}</p>
+              <p class="pub-authors">{{ pub.authors | replace: p.name, me_bold }}</p>
+              <p class="pub-venue">{{ pub.venue }}</p>
+              {%- if pub.award %}<p class="award">{{ pub.award }}</p>{% endif %}
+              {%- if pub.links.first or pub.abstract or pub.bibtex %}
+              <p class="mini-links">
+                {%- for l in pub.links %}
+                <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>
+                {%- endfor %}
+                {%- if pub.abstract %}<button type="button" class="link-btn" data-toggle="abs-{{ forloop.index }}" aria-expanded="false">Abstract</button>{% endif %}
+                {%- if pub.bibtex %}<button type="button" class="link-btn" data-toggle="bib-{{ forloop.index }}" aria-expanded="false">BibTeX</button>{% endif %}
+              </p>
+              {%- endif %}
+              {%- if pub.abstract %}<div class="reveal" id="abs-{{ forloop.index }}" hidden><p>{{ pub.abstract }}</p></div>{% endif %}
+              {%- if pub.bibtex %}<div class="reveal" id="bib-{{ forloop.index }}" hidden><pre>{{ pub.bibtex | escape }}</pre><button type="button" class="link-btn copy-bib">Copy BibTeX</button></div>{% endif %}
+            </div>
+          </li>
+      {%- if forloop.last %}
+        </ol>
+      </div>
+      {%- endif -%}
+      {%- endfor %}
+      <p class="empty" hidden>No publications match this filter.</p>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE + EDUCATION ============ -->
+  <section id="experience" class="wrap block two-col" aria-labelledby="exp-h">
+    <div>
+      <h2 id="exp-h">Experience</h2>
+      <ol class="timeline">
+        {%- for e in site.data.experience.positions %}
+        <li>
+          <p class="t-dates">{{ e.dates }}</p>
+          <h3>{{ e.role }}</h3>
+          <p class="t-org">{{ e.org }}, {{ e.place }}</p>
+          {%- if e.points.first %}
+          <ul class="points">{% for pt in e.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <ol class="timeline">
+        {%- for ed in site.data.experience.education %}
+        <li>
+          <p class="t-dates">{{ ed.dates }}</p>
+          <h3>{{ ed.degree }}</h3>
+          <p class="t-org">{{ ed.school }}</p>
+          {%- if ed.note %}<p class="t-note">{{ ed.note }}</p>{% endif %}
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ TEACHING ============ -->
+  <section id="teaching" class="wrap block" aria-labelledby="teach-h">
+    <h2 id="teach-h">Teaching</h2>
+    <div class="teach-grid">
+      {%- for t in site.data.teaching %}
+      <article class="teach">
+        <p class="t-dates">{{ t.dates }}</p>
+        <h3>{{ t.role }}</h3>
+        <p class="t-org">{{ t.org }}</p>
+        {%- if t.points.first %}
+        <ul class="points">{% for pt in t.points %}<li>{{ pt }}</li>{% endfor %}</ul>
+        {%- endif %}
+        {%- if t.courses.first %}
+        <p class="courses-h">Courses</p>
+        <ul class="courses">{% for c in t.courses %}<li>{{ c }}</li>{% endfor %}</ul>
+        {%- endif %}
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <!-- ============ HONORS / TALKS / SERVICE ============ -->
+  <section id="honors" class="wrap block three-col" aria-label="Honors, talks, and service">
+    <div>
+      <h2>Honors</h2>
+      <ul class="plain">{% for a in site.data.honors.awards %}<li>{{ a | markdownify | remove: "<p>" | remove: "</p>" }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2>Talks</h2>
+      <ul class="plain">{% for a in site.data.honors.talks %}<li>{{ a | markdownify | remove: "<p>" | remove: "</p>" }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2>Service</h2>
+      <ul class="plain">{% for a in site.data.honors.service %}<li>{{ a | markdownify | remove: "<p>" | remove: "</p>" }}</li>{% endfor %}</ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>{{ p.name }}, {{ p.affiliation }}</p>
+    <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+    <p>Last updated {{ site.time | date: "%B %Y" }}</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

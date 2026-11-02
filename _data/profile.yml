@@ -1,0 +1,81 @@
+# ==============================================================
+#  PROFILE: your name, photo, links, short bio, and documents.
+#  Edit the text after each colon. Keep the indentation as it is.
+# ==============================================================
+
+name: Rasel Ahmed Bhuiyan
+tagline: Computer Vision & Machine Learning for Medical and Biometric Imaging
+title: Ph.D. Candidate, Computer Science & Engineering
+affiliation: University of Notre Dame
+email: rbhuiyan@nd.edu
+
+# To change your photo, upload a new square image to assets/img/
+# with the same name (profile.jpg), or change the path below.
+photo: assets/img/profile.jpg
+
+# Shown in Google search results and link previews (one or two sentences).
+meta_description: >-
+  Rasel Ahmed Bhuiyan is a Ph.D. candidate at the University of Notre Dame
+  building computer vision and machine learning systems for medical and
+  biometric imaging.
+
+links:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=LvUO52oAAAAJ&hl=en
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/rabhuiyan/
+  - label: GitHub
+    url: https://github.com/bhuiyanra
+
+# Job market box at the top of the page. Set "show: false" to hide it.
+job_market:
+  show: true
+  text: >-
+    **I'm on the job market.** I finish my Ph.D. in May 2027 and am looking
+    for roles in computer vision, machine learning, and medical imaging AI,
+    in industry, postdoc, or faculty positions. I'd be glad to connect.
+
+# PDFs you want to share. Put the files in the "files" folder.
+# "in_nav: true" also shows the link in the top menu.
+documents:
+  - label: Resume
+    url: files/Rasel_Ahmed_Bhuiyan_Resume.pdf
+    in_nav: false
+  - label: CV
+    url: files/Rasel_Ahmed_Bhuiyan_CV.pdf
+    in_nav: true
+
+# About section. You can use **bold**, *italic*, and [links](https://...).
+# Leave a blank line between paragraphs.
+bio: |
+  I'm a Ph.D. candidate in Computer Science and Engineering at the
+  University of Notre Dame, advised by
+  [Prof. Adam Czajka](https://engineering.nd.edu/faculty/adam-czajka/) in the
+  Computer Vision Research Laboratory (CVRL). I build computer vision systems
+  for medical and biometric imaging, especially for cases where data is
+  limited or images are hard to work with. My work covers the full process:
+  data collection, model training, evaluation, and releasing open-source tools.
+
+  My recent work includes the first working infant iris recognition system
+  for clinical use (**Best Paper Award, WACV 2025 CV4Smalls Workshop**), a
+  post-mortem iris recognition model that cut error by 68% over the prior
+  state of the art, and a canthi detection model now used in NIST's iris
+  recognition pipeline. I'm currently working with foundation models and
+  vision-language models (DINOv3, SigLIP, BioCLIP).
+
+  I have collaborated with NIST, NIMH, Michigan State University, and the
+  Medical University of Warsaw. Before Notre Dame, I was a Lecturer in
+  Computer Science and Engineering at Uttara University in Dhaka, where I
+  taught Algorithms, Digital Logic Design, Machine Learning, and Artificial
+  Intelligence.
+
+# Short facts shown as small boxes under the About section.
+highlights:
+  - value: "14"
+    label: peer-reviewed publications
+  - value: Best Paper
+    label: WACV 2025 CV4Smalls Workshop
+  - value: NIST
+    label: my model runs in NIST's iris recognition pipeline
+  - value: NSF
+    label: funded research on infant iris recognition

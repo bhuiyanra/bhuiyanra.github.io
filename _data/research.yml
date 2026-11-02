@@ -1,0 +1,97 @@
+# ==============================================================
+#  RESEARCH PROJECTS: shown as cards in the "Research" section.
+#  Order here = order on the page.
+#  "tag" is optional (a small label such as "NSF-funded").
+#  "image" is optional: put a picture in assets/img/ and write
+#  its path, e.g.  image: assets/img/infant-iris.png
+#  "links" is optional: add as many as you like.
+# ==============================================================
+
+- title: Infant Iris Recognition
+  focus: Clinical iris segmentation and privacy-preserving data
+  tag: NSF-funded
+  points:
+    - Built the first operational infant iris identification system for clinical populations (EER 3%, AUC 0.99).
+    - Outperformed evaluated commercial systems, some of which rejected every image in the clinical dataset.
+    - Trained segmentation models with no infant labels, using infant-style augmentations of adult iris images.
+    - Synthesized and released a privacy-preserving infant iris dataset.
+  award: Best Paper Award, WACV 2025 CV4Smalls Workshop
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2025W/CV4Small/html/Bhuiyan_Iris_Recognition_for_Infants_WACVW_2025_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/Infant-Iris-Recognition
+
+- title: ColdIrisNet
+  focus: Foundation-model adaptation for post-mortem iris recognition
+  points:
+    - Adapted a frozen DINOv3 (ViT-L/16) with ArcFace metric learning and a saliency-guided multi-task loss.
+    - Designed a landmark-localization network to keep features aligned under extreme rotation.
+    - Cut Equal Error Rate by 68% over the prior state of the art across 70 days of post-mortem change.
+    - Showed strong cross-dataset and live-to-deceased transfer.
+  links: []
+
+- title: Iris Image Processing Toolbox
+  focus: NIST IREX-vetted open-source toolkit
+  points:
+    - Delivered image processing modules to a public, NIST IREX-vetted iris recognition toolkit.
+    - Paired learned models with geometry for canthi alignment, eyelid curve fitting, and projective gaze correction.
+    - My canthi detection model runs in NIST's internal iris recognition pipeline.
+  links:
+    - label: Code
+      url: https://github.com/CVRL/OpenSourceIrisRecognition
+
+- title: Iris Presentation Attack Detection
+  focus: Generalization to unseen attacks
+  points:
+    - Trained models on 400K+ iris images covering live eyes and many attack types, including printouts, synthetic irises, Kindle displays, textured contact lenses, post-mortem eyes, and artificial eyes.
+    - Reached over 95% accuracy on attack types held out from training.
+  links: []
+
+- title: Post-Mortem Interval Estimation
+  focus: Multimodal fusion and regression under domain shift
+  points:
+    - Benchmarked deep regression models and built a multimodal NIR + RGB fusion framework.
+    - Achieved 3.4-hour MAE on same-distribution data and 17.5-hour MAE on held-out subjects.
+    - Cut cross-laboratory error by 40% with GAN-based synthetic augmentation.
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2025/html/Bhuiyan_Forensic_Iris_Image-Based_Post-Mortem_Interval_Estimation_WACV_2025_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/PMI-Estimation
+
+- title: Forensic Iris Image Synthesis
+  focus: Conditional generative modeling for data-scarce domains
+  points:
+    - Built a conditional generator with latent hypersphere sampling for controllable identity synthesis.
+    - Released 180K images across 18 rare conditions, passing 11 of 12 ISO/IEC 29794-6 quality checks.
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/WACV2024W/MAP-A/html/Bhuiyan_Forensic_Iris_Image_Synthesis_WACVW_2024_paper.html
+    - label: Code
+      url: https://github.com/bhuiyanra/ForensicIrisSynthesis
+
+- title: Beyond Mortality
+  focus: Post-mortem iris data collection and fairness analysis
+  points:
+    - Ran a demographic bias analysis across 32M+ comparisons covering age, gender, and decomposition stage.
+  links:
+    - label: Paper
+      url: https://ieeexplore.ieee.org/abstract/document/11063436
+
+- title: Perceptographer
+  focus: Generative AI for neuroscience (NIMH collaboration)
+  points:
+    - Built a hybrid GAN and diffusion image generation engine with latent-space exploration.
+    - Used to visualize perceptual events caused by brain stimulation.
+  links:
+    - label: Abstract
+      url: https://jov.arvojournals.org/article.aspx?articleid=2809333
+
+- title: Vision-Language Models for Forensic Estimation
+  focus: Ongoing work
+  points:
+    - Building a retrieval-augmented, few-shot vision-language framework for post-mortem interval estimation from iris images.
+    - Training SigLIP- and BioCLIP-based image-text models to predict PMI from NIR images and text descriptions.
+    - Applying LoRA fine-tuning and attention-based multiple-instance learning to subject-disjoint benchmarks.
+  links: []

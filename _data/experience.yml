@@ -1,0 +1,44 @@
+# ==============================================================
+#  EXPERIENCE and EDUCATION. Newest first.
+#  "points" is optional.
+# ==============================================================
+
+positions:
+  - role: Graduate Research Assistant
+    org: Computer Vision Research Laboratory (CVRL), University of Notre Dame
+    place: Notre Dame, IN
+    dates: Jan 2022 – Present
+    points:
+      - Computer vision and machine learning for biometric recognition under hard conditions, including infant and post-mortem iris recognition.
+      - Collaborations with NIST, NIMH, Michigan State University, and the Medical University of Warsaw.
+
+  - role: Lecturer
+    org: Department of Computer Science and Engineering, Uttara University
+    place: Dhaka, Bangladesh
+    dates: Oct 2018 – Dec 2021
+    points:
+      - Taught undergraduate courses in Algorithms, Digital Logic Design, Machine Learning, and Artificial Intelligence.
+      - Led research on human activity recognition and EEG seizure recognition (5 publications).
+
+  - role: Research Assistant
+    org: Computer Vision & Pattern Recognition Lab, University of Asia Pacific
+    place: Dhaka, Bangladesh
+    dates: Mar 2016 – Sep 2018
+    points:
+      - Research on hand gesture and sign language recognition, and ECG arrhythmia classification.
+
+education:
+  - degree: Ph.D., Computer Science & Engineering
+    school: University of Notre Dame
+    dates: Jan 2022 – May 2027 (expected)
+    note: "Dissertation focus: iris recognition at life extremes. Advisor: Adam Czajka"
+
+  - degree: M.Sc., Computer Science & Engineering
+    school: University of Notre Dame
+    dates: Aug 2025
+    note: "Focus: forensic iris recognition. GPA: 3.83/4.00"
+
+  - degree: B.Sc., Computer Science & Engineering
+    school: University of Asia Pacific, Dhaka
+    dates: Mar 2018
+    note: "Graduated with highest distinction. GPA: 3.94/4.00"

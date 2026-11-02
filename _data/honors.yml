@@ -1,0 +1,21 @@
+# ==============================================================
+#  HONORS, TALKS, and SERVICE. Each list is one short line per item.
+#  You can use **bold** and [links](https://...).
+# ==============================================================
+
+awards:
+  - "**Best Paper Award**, CV4Smalls Workshop, IEEE/CVF WACV 2025"
+  - "NSF-funded research: Infant Biometric Identification (Grant 2237880)"
+  - "Vice Chancellor's Award for six consecutive semesters of academic distinction, University of Asia Pacific"
+
+talks:
+  - Paper presentation, IEEE/CVF WACV 2025, Tucson, Arizona
+  - Paper presentation, IEEE/CVF WACV 2024 Workshops, Waikoloa, Hawaii
+  - Paper presentation, IEEE ICCIT 2017, Dhaka, Bangladesh
+
+service:
+  - Reviewer, IEEE/CVF WACV 2027 and 2025
+  - Reviewer, International Conference on Science and Contemporary Technologies (ICSCT) 2021
+  - Social Chair, Bangladeshi Student Association, University of Notre Dame (2023–2024)
+  - President, CSE Student Association, University of Asia Pacific (2016–2017)
+  - Departmental committees at Uttara University (routine, accreditation, faculty recruitment)
